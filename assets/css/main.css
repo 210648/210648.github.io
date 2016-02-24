@@ -2417,11 +2417,13 @@
 		border-top: solid 3px #f4f4f4;
 		margin-bottom: 2.25em;
 		padding-top: 2.25em;
+		text-align: left;
 	}
 
 		.features article:first-child {
 			border-top: 0;
 			padding-top: 0;
+			text-align: left;
 		}
 
 		.features article .image {
@@ -2429,21 +2431,25 @@
 			padding-right: 2.5em;
 			vertical-align: middle;
 			width: 48%;
+			text-align: left;
 		}
 
 			.features article .image img {
 				display: block;
 				width: 100%;
+				text-align: left;
 			}
 
 		.features article .inner {
 			display: inline-block;
 			vertical-align: middle;
 			width: 50%;
+			text-align: left;
 		}
 
 			.features article .inner > :last-child {
 				margin-bottom: 0;
+				text-align: left;
 			}
 
 /* Header */
@@ -2468,7 +2474,7 @@
 			}
 
 		#header header p {
-			color: #b6e9dc;
+			color: #000000;
 		}
 
 		#header a {
@@ -2542,7 +2548,7 @@
 
 					#header > nav ul li a.active {
 						background: #fff;
-						color: #4acaa8 !important;
+						color: #000000 !important;
 					}
 
 				#header > nav ul li:first-child {
@@ -2560,14 +2566,18 @@
 
 	#main > section {
 		border-top: solid 6px #f4f4f4;
+		text-align: left;
 	}
 
 		#main > section > .container {
 			padding: 6em 0 4em 0;
+			text-align: left;
+
 		}
 
 		#main > section:first-child {
 			border-top: 0;
+			text-align: left;
 		}
 
 /* One */
