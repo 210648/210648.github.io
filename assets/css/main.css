@@ -2474,7 +2474,7 @@
 			}
 
 		#header header p {
-			color: #000000;
+			color: #b6e9dc;
 		}
 
 		#header a {
@@ -2540,14 +2540,14 @@
 					-ms-transition: none;
 					transition: none;
 					border: 0;
-					color: #ffffff !important;
+					color: #000000 !important;
 					display: block;
 					padding: 0.85em 0;
 					text-decoration: none;
 				}
 
 					#header > nav ul li a.active {
-						background: #fff;
+						background: #b22222;
 						color: #000000 !important;
 					}
 
