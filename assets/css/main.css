@@ -2567,17 +2567,20 @@
 	#main > section {
 		border-top: solid 6px #f4f4f4;
 		text-align: left;
+		position: left;
 	}
 
 		#main > section > .container {
 			padding: 6em 0 4em 0;
 			text-align: left;
+			position: left;
 
 		}
 
 		#main > section:first-child {
 			border-top: 0;
 			text-align: left;
+			position: left;
 		}
 
 /* One */
