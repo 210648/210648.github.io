@@ -1,3 +1,10 @@
+$(document).ready(function(){
+
+
+    $("#charcterforgame").show();
+    $('.stormtroopers').hide();
+     $('.win').hide();
+
 $(document).keydown(function(e) {
     $("#charcterforgame").keydown;
     switch (e.which) {
@@ -22,6 +29,8 @@ $(document).keydown(function(e) {
           left: "+=40px"
         }, 'fast');
         break;
+};
+});
 
  function collision($div1, $div2) {
     var x1 = $div1.offset().left;
@@ -37,13 +46,32 @@ $(document).keydown(function(e) {
     var b2 = y2 + h2;
     var r2 = x2 + w2;
 
+    if (b1 < y2 || y1 > b2 || r1 < x2 || x1 > r2) return false;
+    return true;
+  }
+
+
+  window.setInterval(function() {
+    //function that makes the magic happen! Below, jQuery prints the word "FALSE" into #results
+    $('#result').text('False');
+    //IMPORTANT!!! Below declares the class of divs that your sprite collides with!!
     $.each($('.stormtroopers'), function() {
-      if (collision($('#charcterforgame'), $(this)))
-          $("#gameover").show();
-});
-    $("#charcterforgame").show();
-    $('.stormtroopers').hide();
-     $('.win'),hide();
+      if (collision($('#charcterforgame'), $(this))) { //another if statement. If #myCar DOES hit something, the following will happen:
+ 
+
+
+               $("#gameover").show();
+
+
+
+        //all the actions that happen during a collision go here
+
+      }
+    });
+  }, 200); //this is how often it checks for a collision
+
+
+
 
     $('.buttonone').click(function(){
      $("#stormtrooperthirtyone").show();
@@ -199,7 +227,7 @@ $(document).keydown(function(e) {
      $("#stormtrooperfiftysix").hide(80000);
      $("#stormtrooperfiftyseven").hide(80000);
      $("#stormtrooperfiftynine").hide(80000);
-     $("#stormtroopersixty").hide(80000)
+     $("#stormtroopersixty").hide(80000);
      //bottom does wave 4
      $("#stormtrooperthirtyone").show(80000);
      $("#stormtrooperthirtythree").show(80000);
@@ -251,7 +279,7 @@ $(document).keydown(function(e) {
      $("#stormtrooperfiftysix").hide(105000);
      $("#stormtrooperfiftyseven").hide(105000);
      $("#stormtrooperfiftynine").hide(105000);
-     $("#stormtroopersixty").hide(105000)
+     $("#stormtroopersixty").hide(105000);
      //bottoem does wave 5
      $("#stormtrooperthirtyone").show(105000);
      $("#stormtrooperthirtythree").show(105000);
@@ -303,7 +331,7 @@ $(document).keydown(function(e) {
      $("#stormtrooperfiftysix").hide(130000);
      $("#stormtrooperfiftyseven").hide(130000);
      $("#stormtrooperfiftynine").hide(130000);
-     $("#stormtroopersixty").hide(130000)
+     $("#stormtroopersixty").hide(130000);
      //bottom does wave 6
      $("#stormtrooperthirtyone").show(130000);
      $("#stormtrooperthirtythree").show(130000);
@@ -355,7 +383,7 @@ $(document).keydown(function(e) {
      $("#stormtrooperfiftysix").hide(154000);
      $("#stormtrooperfiftyseven").hide(154000);
      $("#stormtrooperfiftynine").hide(154000);
-     $("#stormtroopersixty").hide(154000)
+     $("#stormtroopersixty").hide(154000);
      //bottom does wave 7
      $("#stormtrooperthirtyone").show(154000);
      $("#stormtrooperthirtythree").show(154000);
@@ -407,7 +435,7 @@ $(document).keydown(function(e) {
      $("#stormtrooperfiftysix").hide(169000);
      $("#stormtrooperfiftyseven").hide(169000);
      $("#stormtrooperfiftynine").hide(169000);
-     $("#stormtroopersixty").hide(169000)
+     $("#stormtroopersixty").hide(169000);
      //bottom does wave 8
      $("#stormtrooperthirtyone").show(169000);
      $("#stormtrooperthirtythree").show(169000);
@@ -459,7 +487,7 @@ $(document).keydown(function(e) {
      $("#stormtrooperfiftysix").hide(180000);
      $("#stormtrooperfiftyseven").hide(180000);
      $("#stormtrooperfiftynine").hide(180000);
-     $("#stormtroopersixty").hide(180000)
+     $("#stormtroopersixty").hide(180000);
      //bottom does wave 9
      $("#stormtrooperthirtyone").show(180000);
      $("#stormtrooperthirtythree").show(180000);
@@ -566,4 +594,6 @@ $(document).keydown(function(e) {
      $("#stormtroopersixty").hide(200000)
       $("#howtowin").show(201000);
     });
-  };); 
+
+
+});//end of doc.ready
