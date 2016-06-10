@@ -391,12 +391,12 @@ body {
   margin-top:806px;
   margin-left: 1200px;
    }
-   #stormtrooperseven{
- background-image: url("img/stormtrooper.jpg");
+  #stormtrooperseven{
+    background-image: url("img/stormtrooper.jpg");
   height: 161px;
   width: 240px;
   margin-top: 645px;
-   }
+  }
    #stormtroopereight{
  background-image: url("img/stormtrooper.jpg");
   height: 161px;
